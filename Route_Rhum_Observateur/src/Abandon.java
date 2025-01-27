@@ -6,19 +6,32 @@ public class Abandon { // Déclaration de la classe Abandon
     String nomSkipper; // Nom du skipper
 
 
-    // Constructeur pour initialiser un objet Abandon avec des attributs spécifiques
+    /**
+     * Initialise un objet Abandon avec des attributs specifiques
+     * @param nomVoilier
+     * @param classeVoilier
+     * @param nomSkipper
+     **/
     public Abandon(String nomVoilier, ClasseVoilier classeVoilier, String nomSkipper) {
         this.nomVoilier = nomVoilier; // Initialise l'attribut nomVoilier avec la valeur donnée
         this.classeVoilier = classeVoilier; // Initialise l'attribut classeVoilier
         this.nomSkipper = nomSkipper; // Initialise l'attribut nomSkipper
     }
 
-    // Méthode pour récupérer la classe du voilier
+    /**
+     * Recupere la classe du voilier
+     * @return classeVoilier
+     **/
     public ClasseVoilier getClasseVoilier() {
         return classeVoilier; // Renvoie l'attribut classeVoilier
     }
 
-    // Méthode toString pour représenter l'objet sous forme de chaîne de caractères
+    /**
+     * Represente l'objet sous forme de chaine de caractere
+     * @return nomVoilier
+     * @return classeVoilier
+     * @return nomSkipper
+     **/
     public String toString() {
         // Renvoie une description complète de l'abandon
         return "---- Nom voilier : " + nomVoilier + " ---- " + "Classe voilier : " + classeVoilier + " ---- " + "Nom skipper : " + nomSkipper;
